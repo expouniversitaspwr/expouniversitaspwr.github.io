@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 120px;
+}
+
+/* ========================== BUTTON GALLERY ========================== */
+
+.gallery {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 16px auto;
+}
+
+.gallery ul {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.gallery ul li {
+  list-style: none;
+  background-color: var(--color-primary);
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.gallery ul li:hover {
+  border: 1px solid var(--color-white);
+  background: transparent;
+}
+
+.gallery ul li.active {
+  background-color: var(--color-bg1);
+}
+
+/* ========================== IMAGES GALLERY ========================== */
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image .itemBox:hover {
+  transform: scale(1.05);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.image .itemBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  display: block;
+}
+
+.image .itemBox.hide {
+  display: none;
+}
+
+.image .itemBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
