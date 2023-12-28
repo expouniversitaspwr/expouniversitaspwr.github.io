@@ -1,11 +1,22 @@
 /* ========================== TIMELINE LOMBA ========================== */
 
+.events-lomba {
+  padding-bottom: 1rem;
+}
+
 .events-expouniv {
   padding: 1rem;
 }
 
 .events-talkshow {
   padding: 1rem;
+}
+
+.location {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
 }
 
 .location .heading {
@@ -19,13 +30,6 @@
 .section-location {
   padding-top: 1rem;
 }
-
-/* .events {
-  position: relative;
-  top: 2rem;
-  overflow: hidden;
-  height: 80vh;
-} */
 
 .main-events {
   width: 100%;
