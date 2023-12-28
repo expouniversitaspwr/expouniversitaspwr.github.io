@@ -93,5 +93,6 @@ sr.reveal(".about_achievements-right", { delay: 600, origin: "bottom" });
 sr.reveal(".about_coorperation-left", { delay: 600, origin: "bottom" });
 sr.reveal(".about_coorperation-right", { delay: 600, origin: "top" });
 sr.reveal(".course_left", { delay: 600, origin: "left" });
+sr.reveal(".course_middle", { delay: 600, origin: "top" });
 sr.reveal(".course_right", { delay: 600, origin: "right" });
 sr.reveal(".faq", { delay: 600, origin: "top" });

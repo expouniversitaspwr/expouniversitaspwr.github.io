@@ -299,11 +299,18 @@ header {
 
 .courses_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .course_left {
+  background: var(--color-bg);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.course_middle {
   background: var(--color-bg);
   text-align: center;
   border: 1px solid transparent;
@@ -318,6 +325,11 @@ header {
 }
 
 .course_left:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.course_middle:hover {
   background: transparent;
   border-color: var(--color-primary);
 }

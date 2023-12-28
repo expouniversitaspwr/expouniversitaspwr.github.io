@@ -4,11 +4,16 @@
   padding: 1rem;
 }
 
+.events-talkshow {
+  padding: 1rem;
+}
+
 .location .heading {
   height: auto;
   font-size: 28px;
   position: relative;
   text-align: center;
+  margin-top: 80px;
 }
 
 .section-location {
