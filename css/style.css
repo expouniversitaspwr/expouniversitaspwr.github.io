@@ -213,7 +213,6 @@ header {
 .about_achievements {
   margin-top: 3rem;
   background: var(--color-bg1);
-  overflow: hidden;
 }
 
 .about_coorperations {
@@ -646,6 +645,10 @@ footer ul li a:hover {
   .coorperations_cards {
     grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
+  }
+
+  .about_achievements-container {
+    overflow: hidden;
   }
 
   /* ================ POPULAR COURSES ====================*/
