@@ -213,6 +213,7 @@ header {
 .about_achievements {
   margin-top: 3rem;
   background: var(--color-bg1);
+  overflow: hidden;
 }
 
 .about_coorperations {
