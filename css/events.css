@@ -1,4 +1,4 @@
-/* ========================== TIMELINE LOMBA ========================== */
+/* ========================== TIMELINE  ========================== */
 
 .events-lomba {
   padding-bottom: 1rem;
@@ -173,8 +173,10 @@ ul li .date {
 
 .maps {
   margin-top: 48px;
-  margin-left: 24px;
-  margin-right: 24px;
+  width: 76%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ========================== MEDIA QUERIES (TABLETS) ========================== */

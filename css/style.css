@@ -617,6 +617,7 @@ footer ul li a:hover {
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
+    overflow-x: hidden;
   }
 
   /* ================ NAVBAR ====================*/
