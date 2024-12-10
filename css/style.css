@@ -131,6 +131,11 @@ nav {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.navbar-brand {
+  width: 10rem;
+  height: auto;
+}
+
 .nav_container {
   height: 100%;
   display: flex;
