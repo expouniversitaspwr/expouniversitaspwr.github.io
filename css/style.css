@@ -124,11 +124,6 @@ nav {
   z-index: 11;
 }
 
-.navbar-brand {
-  height: 64px;
-  width: auto;
-}
-
 /* change navbar styles on scroll using javascript */
 
 .window-scroll {
@@ -141,6 +136,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar-brand {
+  height: fit-content;
+  width: auto;
 }
 
 nav button {
