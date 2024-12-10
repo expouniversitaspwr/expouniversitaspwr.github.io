@@ -141,7 +141,7 @@ ul li .date {
 }
 
 .container-timeline ul li .circle {
-  width: 28px;
+  width: fit-content;
   height: 28px;
   background-color: transparent;
   border-radius: 50%;
