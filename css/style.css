@@ -138,11 +138,6 @@ nav {
   align-items: center;
 }
 
-.navbar-brand {
-  height : 54px; 
-  width : auto;
-}
-
 nav button {
   display: none;
 }
