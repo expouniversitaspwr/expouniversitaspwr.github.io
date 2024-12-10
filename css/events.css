@@ -130,7 +130,7 @@ ul li p {
 ul li .date {
   position: absolute;
   top: -40px;
-  width: 170px;
+  width: fit-content;
   height: 35px;
   border-radius: 20px;
   color: white;
@@ -151,7 +151,7 @@ ul li .date {
 
 .container-timeline ul li .circle::after {
   content: " ";
-  width: 15px;
+  width: fit-content;
   height: 15px;
   background-color: var(--color-danger);
   border-radius: 50%;
