@@ -111,6 +111,7 @@ img {
 .btn-secondary {
   background: transparent;
   color: var(--color-white);
+  border: 1px solid var(--color-white);
 }
 
 /* ========================== NAVBAR ========================== */
@@ -194,7 +195,6 @@ header {
   overflow: hidden;
   height: 80vh;
   margin-bottom: 5rem;
-  text-align: justify;
 }
 
 .header_container {
