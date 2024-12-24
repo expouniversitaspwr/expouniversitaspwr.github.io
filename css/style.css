@@ -103,6 +103,7 @@ img {
   background: transparent;
   color: var(--color-text);
   border-color: var(--color-text);
+  transform: scale(1.05);
 }
 
 .btn-primary {
@@ -114,6 +115,7 @@ img {
   background: transparent;
   color: var(--color-text);
   border: 1px solid var(--color-text);
+  margin-left: 1rem;
 }
 
 /* ========================== NAVBAR ========================== */
@@ -274,6 +276,7 @@ header {
 .coorperation_card:hover {
   background: var(--color-bg2);
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
 .achievement_icon,

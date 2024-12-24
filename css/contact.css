@@ -85,6 +85,12 @@ textarea {
   color: var(--color-text);
 }
 
+/* input active */
+input:focus,
+textarea:focus {
+  border: 1px solid var(--color-danger);
+}
+
 .contact_form .btn {
   width: max-content;
   margin-top: 1rem;
