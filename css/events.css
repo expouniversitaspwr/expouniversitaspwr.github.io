@@ -31,10 +31,6 @@
   padding-top: 1rem;
 }
 
-.maps {
-  border: 3px solid var(--color-danger);
-}
-
 .main-events {
   width: 100%;
   height: auto;
@@ -177,6 +173,8 @@ ul li .date {
 
 .maps {
   margin-top: 48px;
+  border: 3px solid var(--color-danger);
+  border-radius: 8px;
   width: 76%;
   display: block;
   margin-left: auto;

@@ -316,6 +316,7 @@ header {
   background: var(--color-bg);
   text-align: center;
   border: 1px solid transparent;
+  border-radius: 8px;
   transition: var(--transition);
 }
 
@@ -323,6 +324,7 @@ header {
   background: var(--color-bg);
   text-align: center;
   border: 1px solid transparent;
+  border-radius: 8px;
   transition: var(--transition);
 }
 
@@ -330,6 +332,7 @@ header {
   background: var(--color-bg);
   text-align: center;
   border: 1px solid transparent;
+  border-radius: 8px;
   transition: var(--transition);
 }
 
@@ -375,6 +378,7 @@ header {
   gap: 1.4rem;
   height: fit-content;
   background-color: var(--color-primary);
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -428,6 +432,7 @@ header {
   padding: 2rem;
   margin-top: 3rem;
   position: relative;
+  border-radius: 8px;
 }
 
 .testimonial_body::before {
