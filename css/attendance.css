@@ -9,9 +9,9 @@
   width: 480px;
   border: 2px solid var(--color-primary);
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
   background: var(--color-bg1);
-  color: #fff;
+  color: var(--color-text);
   border-radius: 12px;
   padding: 30px 32px;
 }
@@ -38,15 +38,20 @@
   border: 1px solid var(--color-primary);
   border-radius: 8px;
   font-size: 16px;
-  color: #fff;
+  color: var(--color-text);
   padding: 20px 45px 20px 20px;
   margin-top: 8px;
   margin-bottom: 16px;
 }
 
-.input-box input::placeholder {
-  color: var(--color-light);
+/* input box active */
+.input-box input:focus {
+  border-color: var(--color-danger);
 }
+
+/* .input-box input::placeholder {
+  color: var(--color-text);
+} */
 
 .wrapper .rules {
   font-size: 14px;
@@ -67,7 +72,7 @@
 }
 
 .rules a:hover {
-  color: var(--color-bg2);
+  color: var(--color-danger);
 }
 
 .btn-attendance {
@@ -75,8 +80,8 @@
   height: 45px;
   background: var(--color-danger);
   border: 1px solid transparent;
+  border-radius: 8px;
   margin-top: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 16px;
   color: var(--color-white);
@@ -85,5 +90,6 @@
 
 .btn-attendance:hover {
   background: transparent;
-  border-color: var(--color-white);
+  color: var(--color-text);
+  border-color: var(--color-text);
 }

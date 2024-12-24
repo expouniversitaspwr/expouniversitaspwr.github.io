@@ -31,6 +31,10 @@
   padding-top: 1rem;
 }
 
+.maps {
+  border: 3px solid var(--color-danger);
+}
+
 .main-events {
   width: 100%;
   height: auto;
@@ -84,7 +88,7 @@
   height: auto;
   padding: 15px 20px;
   background-color: var(--color-bg2);
-  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
+  /* box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384); */
   border-radius: 8px;
   margin-bottom: 30px;
   /* z-index: 99; */
