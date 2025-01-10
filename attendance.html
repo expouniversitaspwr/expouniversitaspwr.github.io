@@ -56,7 +56,7 @@
 
     <section class="attendance-form">
       <div class="wrapper">
-        <form action="" name="form-presensi-kehadiran-umum">
+        <form action="" name="presensi-kehadiran-umum-eu-2025">
           <h2>Form Presensi</h2>
 
           <div class="input-box">
@@ -85,13 +85,18 @@
               Dont's selama acara Expo Universitas 2025
             </label>
             <a
-              href="https://www.instagram.com/p/C18KmKfy4rO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+              href="https://www.instagram.com/p/DEe_RbjyQY9/?img_index=2"
               target="_blank"
               >Belum tahu?</a
             >
           </div>
 
           <button type="submit" class="btn-attendance">Submit</button>
+
+          <!-- progress bar -->
+          <div class="progress-bar" id="progress-bar" style="display: none">
+            <div class="progress"></div>
+          </div>
         </form>
       </div>
     </section>
@@ -177,14 +182,20 @@
     <!-- Script Submit to Google Form -->
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyErVLj2XjsAG3jzJl6tQK2YkoDp-OE2uIjmvK3gpoHZfowCx37Vo35oDzvjJAtT1pQzQ/exec";
-      const form = document.forms["form-presensi-kehadiran-umum"];
+        "https://script.google.com/macros/s/AKfycbyx-xQ2wAH7eGBzG3xXPpY8Un0K3zDmk_d-cs4Zmesih1KNfm_RsXVsAyxTdOT4wGhm/exec";
+      const form = document.forms["presensi-kehadiran-umum-eu-2025"];
+      const progressBar = document.getElementById("progress-bar");
+      const btnSubmit = document.querySelector(".btn-attendance");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+        progressBar.style.display = "block"; // Show progress bar
+
+        // if progress bar shown, hide submit button
+        btnSubmit.style.display = "none";
+
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            // Kondisi ketika user berhasil melakukan presensi
             console.log("Success!", response);
             Swal.fire({
               icon: "success",
@@ -192,6 +203,8 @@
               text: "Presensi berhasil dilakukan. Terima kasih!",
             });
             form.reset();
+            progressBar.style.display = "none"; // Hide progress bar
+            btnSubmit.style.display = "block"; // Show submit button
           })
           .catch((error) => {
             console.error("Error!", error.message);
@@ -200,6 +213,8 @@
               title: "Oops!",
               text: "Tampaknya terjadi kesalahan!",
             });
+            progressBar.style.display = "none"; // Hide progress bar
+            btnSubmit.style.display = "block"; // Show submit button
           });
       });
     </script>

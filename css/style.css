@@ -457,6 +457,31 @@ header {
   transform: rotate(45deg);
 }
 
+/* ========================== PROGRESS BAR ========================== */
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  width: 0;
+  height: 8px;
+  background-color: #4caf50;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 /* ========================== FOOTER ========================== */
 footer {
   background: var(--color-bg1);
